@@ -10,5 +10,12 @@ def hello():
 def potter():                    
     return render_template("potter.html") 
 
+@app.route("/page3")                
+def page3():                    
+    return render_template("page3.html") 
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True) 
