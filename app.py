@@ -6,5 +6,9 @@ app = Flask(__name__)
 def hello():                    
     return render_template("index.html") 
 
+@app.route("/potter")                
+def potter():                    
+    return render_template("potter.html") 
+
 if __name__ == "__main__":
     app.run(debug=True) 
